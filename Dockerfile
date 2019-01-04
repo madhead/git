@@ -1,7 +1,8 @@
 FROM alpine:latest
 
 RUN apk -v --update --no-cache add \
-        git
+        git \
+        openssh
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile=Dockerfile \
